@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% load static wagtailimages_tags %}
+{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block content %}
+   <section class="w-section main-section" id="hero">
+    <div class="w-container main-text-container">
+      <h1 class="main-title" data-ix="load-slide-top-600ms">Welcome to <span class="company-name-header">Evo</span><br>Where <span class="arts">arts</span> and<br><span class="arts">high tech</span> converge.</h1>
+    </div>
+    <div class="w-container round-div-container">
+      <div class="w-row">
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <div class="round-div first" data-ix="load-pop-up">
+            <h1 class="round-div-heading">Modern</h1>
+          </div>
+        </div>
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <div class="round-div second" data-ix="load-pop-up-300">
+            <h1 class="round-div-heading second">simple</h1>
+          </div>
+        </div>
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <div class="round-div third" data-ix="load-pop-up-600">
+            <h1 class="round-div-heading third">creative</h1>
+          </div>
+        </div>
+        <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6">
+          <div class="round-div fourth" data-ix="load-pop-up-900">
+            <h1 class="round-div-heading fourth">innovative</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="w-inline-block down-arrow-link" href="#collab"><img src="{% static 'images/down-arrow2.svg' %}" width="50">
+    </a>
+  </section>
+  <section class="w-section main-section collab" id="collab">
+    <div class="w-container section-heading-container">
+      <h1 class="main-heading section" data-ix="scroll-slide-top-600ms">{{ self.section_1_title }}</h1>
+    </div>
+    <div class="w-container collab-container">
+      <div class="w-row">
+        <div class="w-col w-col-6 w-col-small-6">
+          <div>
+            <h1 class="content-heading" data-ix="scroll-slide-right">{{ self.section_1_subtitle_1 }}</h1>
+            <h1 class="content-heading black" data-ix="scroll-slide-right-300">{{ self.section_1_subtitle_2 }}</h1>
+            <h1 class="content-heading yellow" data-ix="scroll-slide-right-600">{{ self.section_1_subtitle_3 }}</h1>
+          </div>
+        </div>
+        <div class="w-col w-col-6 w-col-small-6">
+          <div>
+              {% image self.section_1_image width-350 class="collab-image" data-ix="scroll-pop-up-900" %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="w-inline-block down-arrow-link" href="#crafts"><img src="{% static 'images/down-arrow2.svg' %}" width="50">
+    </a>
+  </section>
+  <section class="w-section cfrats-section" id="crafts">
+    <div class="w-container section-heading-container">
+      <h1 class="main-heading section" data-ix="scroll-slide-top-600ms">{{ self.section_2_title }}</h1>
+    </div>
+    <div class="w-container craftsman-container">
+      <div class="w-row">
+        <div class="w-col w-col-6 w-col-small-6">
+          <div>
+            <h1 class="content-heading" data-ix="scroll-slide-right">{{ self.section_2_subtitle_1 }}</h1>
+            <h1 class="content-heading black" data-ix="scroll-slide-right-300">{{ self.section_2_subtitle_2 }}</h1>
+            <h1 class="content-heading yellow" data-ix="scroll-slide-right-600">{{ self.section_2_subtitle_3 }}</h1>
+          </div>
+        </div>
+        <div class="w-col w-col-6 w-col-small-6">
+          <div>
+              {% image self.section_2_image width-350 class="craft-image" data-ix="scroll-pop-up-900" %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="w-inline-block down-arrow-link" href="#creative"><img src="{% static 'images/down-arrow2.svg' %}" width="50">
+    </a>
+  </section>
+  <section class="w-section creative main-section collab" id="creative">
+    <div class="w-container section-heading-container">
+      <h1 class="main-heading section" data-ix="scroll-slide-top-600ms">{{ self.section_3_title }}</h1>
+    </div>
+    <div class="w-container creativity-container">
+      <div class="w-row">
+        <div class="w-col w-col-6 w-col-small-6">
+          <div>
+            <h1 class="content-heading" data-ix="scroll-slide-right">{{ self.section_3_subtitle_1 }}</h1>
+            <h1 class="content-heading black" data-ix="scroll-slide-right-300">{{ self.section_3_subtitle_2 }}</h1>
+            <h1 class="content-heading yellow" data-ix="scroll-slide-right-600">{{ self.section_3_subtitle_3 }}</h1>
+          </div>
+        </div>
+        <div class="w-col w-col-6 w-col-small-6">
+          <div>
+              {% image self.section_3_image width-400 class="creativity-image" data-ix="scroll-pop-up-900" %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="w-inline-block down-arrow-link" href="#accountability"><img src="{% static 'images/down-arrow2.svg' %}" width="50">
+    </a>
+  </section>
+  <section class="w-section creative main-section collab accountability" id="accountability">
+    <div class="w-container section-heading-container">
+      <h1 class="main-heading section" data-ix="scroll-slide-top-600ms">{{ self.section_4_title }}</h1>
+    </div>
+    <div class="w-container account-container">
+      <div class="w-row">
+        <div class="w-col w-col-6 w-col-small-6">
+          <div>
+            <h1 class="content-heading" data-ix="scroll-slide-right">{{ self.section_4_subtitle_1 }}</h1>
+            <h1 class="content-heading black" data-ix="scroll-slide-right-300">{{ self.section_4_subtitle_2 }}</h1>
+            <h1 class="content-heading yellow" data-ix="scroll-slide-right-600">{{ self.section_4_subtitle_3 }}</h1>
+          </div>
+        </div>
+        <div class="w-col w-col-6 w-col-small-6">
+          <div>
+              {% image self.section_4_image width-400 class="account-image"  data-ix="scroll-pop-up-900"  %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="w-inline-block down-arrow-link" href="#hero"><img src="{% static 'images/up-arrow.svg' %}" width="50">
+    </a>
+  </section>
+{% endblock %}

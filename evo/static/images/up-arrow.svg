@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="72"
+   height="72"
+   viewBox="0 0 72.000001 71.999998"
+   id="레이어_1"
+   xml:space="preserve"><metadata
+     id="metadata23"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs21" /><path
+     d="m 36,71.999979 c 19.9,0 36,-16.1 36,-36 C 72,16.099979 55.9,-2.0838898e-5 36,-2.0838898e-5 16.1,-2.0838898e-5 0,16.099979 0,35.999979 c 0,19.9 16.1,36 36,36"
+     id="path3"
+     style="fill:#1baba6" /><g
+     transform="translate(-261.2,-385.60002)"
+     id="g5"
+     style="opacity:0.37000002"><g
+       id="g7"><defs
+         id="defs9"><rect
+           width="56"
+           height="56.400002"
+           x="277"
+           y="386.39999"
+           id="SVGID_1_" /></defs><clipPath
+         id="SVGID_2_"><use
+           id="use13"
+           style="overflow:visible"
+           x="0"
+           y="0"
+           width="595.29999"
+           height="841.90002"
+           xlink:href="#SVGID_1_" /></clipPath><path
+         d="m 304.9,386.4 -27.9,30.7 22.3,-2.1 9.3,27.9 24.3,-24.6 c -1.4,-15.8 -12.9,-28.5 -28,-31.9"
+         clip-path="url(#SVGID_2_)"
+         id="path15"
+         style="fill:#009e98" /></g></g><polygon
+     points="297.2,433.1 308.7,442.8 306.3,417.1 317.3,417.1 297.2,400.3 277,417.1 288.1,417.1 285.7,442.8 "
+     transform="translate(-261.2,-385.60002)"
+     id="polygon17"
+     style="fill:#ffffff" /></svg>

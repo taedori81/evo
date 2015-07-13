@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% load static wagtailcore_tags wagtailimages_tags %}
+{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block content %}
+   <section class="w-section special-section">
+    <div class="w-container main-text-container special">
+      <div>
+          {% image self.main_image width-280 class="w-hidden-medium w-hidden-small w-hidden-tiny offer-image" data-ix="load-pop-up-900"  %}
+      </div>
+      <h1 class="offer-heading" data-ix="load-slide-down">{{ self.main_header_1 }}</h1>
+      <h1 class="offer-heading" data-ix="load-slide-down-300">{{ self.main_header_2 }}</h1>
+      <h3 class="offer-subheading" data-ix="load-slide-top-600ms">{{ self.main_sub_header }}</h3>
+    </div>
+    <div class="w-container separator" data-ix="load-slide-left-1000ms"></div>
+    <div class="w-container column-container">
+      <div class="w-row icon-column">
+        <div class="w-col w-col-4 w-col-small-4">
+          <div class="offericon-container" data-ix="load-pop-up-300"><img class="offer-icon" src="{% static 'images/cellphone.svg' %}" width="50">
+            <h4 class="offer-icontext">mobile ready</h4>
+          </div>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4" data-ix="load-pop-up-900">
+          <div class="offericon-container" data-ix="load-pop-up-600"><img class="offer-icon" src="{% static 'images/computer-white.svg' %}" width="50">
+            <h4 class="offer-icontext">&nbsp;&nbsp;Responsive design</h4>
+          </div>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4">
+          <div class="offericon-container" data-ix="load-pop-up-900"><img class="offer-icon" src="{% static 'images/lightbulb.svg' %}" width="50">
+            <h4 class="offer-icontext">new&nbsp;logo</h4>
+          </div>
+        </div>
+      </div>
+      <div class="w-row icon-column">
+        <div class="w-col w-col-4 w-col-small-4">
+          <div class="offericon-container" data-ix="load-pop-up-900"><img class="offer-icon" src="{% static 'images/computer monitor10-white.svg' %}" width="50">
+            <h4 class="offer-icontext">web hosting</h4>
+          </div>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4">
+          <div class="offericon-container" data-ix="load-pop-up-600"><img class="offer-icon" src="{% static 'images/dollar103-white.svg' %}" width="50">
+            <h4 class="offer-icontext">&nbsp;&nbsp;&nbsp;free set up fee</h4>
+          </div>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4">
+          <div class="offericon-container" data-ix="load-pop-up-300"><img class="offer-icon" src="{% static 'images/write15-white.svg' %}" width="50">
+            <h4 class="offer-icontext">Free Consulting</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-container button-container"><a class="button contact" href="/contact" data-ix="load-pop-up-600">Contact</a>
+    </div>
+  </section>
+{% endblock %}

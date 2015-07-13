@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% load static wagtailimages_tags wagtailcore_tags %}
+{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block content %}
+   <section class="w-section service-section" data-ix="show-nav">
+    <div class="w-container service-header-container">
+      <h1 class="service-heading"><span class="bold-text">We are <br>Building&nbsp;</span>and&nbsp;<span class="bold-text">Maintaining</span> <br><span class="big-bold-text" data-ix="load-slide-down">website</span></h1>
+        {% image self.section_1_image width-150 class="service-robot" data-ix="load-pop-up-900" %}
+      <div>
+        <h3 class="service-subheading" data-ix="scroll-slide-right-600">{{ self.section_1_sub_heading }}</h3>
+      </div>
+    </div>
+    <a class="w-inline-block down-arrow-link" href="#Service-Detail"><img src="{% static 'images/down-arrow2.svg' %}" width="50">
+    </a>
+  </section>
+  <section class="w-section service-section second" id="Service-Detail">
+    <div class="w-container">
+      <h1 class="detail-heading" data-ix="scroll-slide-down-300">{{ self.section_2_heading }}</h1>
+    </div>
+    <div class="w-container">
+      <div class="w-row service-row">
+        <div class="w-col w-col-6">
+          <div class="w-container service-detail-container">
+            <div class="w-clearfix" data-ix="scroll-pop-up">
+              <h1 class="detail-subheading branding">{{ self.section_2_sub_heading_1 }}</h1>
+              <p class="detail-desc">{{ self.section_2_description_1 }}</p>
+            </div>
+            <div class="w-clearfix" data-ix="scroll-pop-up-300">
+              <h1 class="detail-subheading webdesign">{{ self.section_2_sub_heading_2 }}</h1>
+              <p class="detail-desc">{{ self.section_2_description_2 }}</p>
+            </div>
+            <div class="w-clearfix" data-ix="scroll-pop-up-600">
+              <h1 class="detail-subheading programming">{{ self.section_2_sub_heading_3 }}</h1>
+              <p class="detail-desc">{{ self.section_2_description_3 }}</p>
+            </div>
+            <div class="w-clearfix" data-ix="scroll-pop-up-900">
+              <h1 class="detail-subheading marketing">{{ self.section_2_sub_heading_4 }}</h1>
+              <p class="detail-desc">{{ self.section_2_description_4 }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-6">
+          <div>
+              {% image self.section_2_image width-463 class="w-hidden-small w-hidden-tiny" data-ix="scroll-pop-up-900" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

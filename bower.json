@@ -1,0 +1,19 @@
+{
+  "name": "evo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/taedori81/evo",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

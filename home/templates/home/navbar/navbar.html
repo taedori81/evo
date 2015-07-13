@@ -1,0 +1,34 @@
+{% load evo_tags wagtailcore_tags %}
+{% get_site_root as site_root %}
+
+<div>
+   <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-ix="load-slide-down-300">
+     <header class="w-clearfix nav-menu-conttainer"><a class="w-nav-brand" href="{% pageurl site_root %}"><h1 class="logo-headtext">EVO</h1></a>
+       <nav class="w-nav-menu nav-menu" role="navigation">
+           {% for menuitem in menuitems %}
+                <a href="{% pageurl menuitem %}" class="w-nav-link mobile-nav-link top-nav-link"
+                   data-ix="hover-{{ menuitem.title | lower }}">{{ menuitem.title }}</a>
+           {% endfor %}
+
+
+         <div class="w-row line-row">
+           <div class="w-col w-col-3">
+             <div class="service-line" data-ix="display-none-on-load"></div>
+           </div>
+           <div class="w-col w-col-3">
+             <div class="special-line" data-ix="display-none-on-load"></div>
+           </div>
+           <div class="w-col w-col-3">
+             <div class="team-line" data-ix="display-none-on-load"></div>
+           </div>
+           <div class="w-col w-col-3">
+             <div class="contact-line" data-ix="display-none-on-load"></div>
+           </div>
+         </div>
+       </nav>
+       <div class="w-nav-button menu-icon">
+         <div class="w-icon-nav-menu menu-icon white"></div>
+       </div>
+     </header>
+   </div>
+</div>

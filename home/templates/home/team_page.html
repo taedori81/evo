@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% load static wagtailimages_tags %}
+{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block content %}
+   <section class="w-section team-section" data-ix="show-nav">
+    <div class="w-container team-container">
+      <h1 class="team-header" data-ix="load-slide-down-300">Meet our team</h1>
+      <div class="team-separator" data-ix="load-slide-left-1000ms"></div>
+      <div class="member-container">
+        <div class="w-row">
+          <div class="w-col w-col-3 w-col-small-6">
+            <div class="member-div" data-ix="load-pop-up">
+                {% image self.taehwan_avatar original class="member-avatar"  %}
+
+            </div>
+            <div class="name-div">
+              <h3 class="member-name">tae Hwan</h3>
+              <div class="team-separator"></div>
+              <h4 class="member-title">Developer</h4>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div class="member-div" data-ix="load-pop-up-300">
+                {% image self.josh_avatar original class="member-avatar"  %}
+            </div>
+            <div class="name-div">
+              <h3 class="member-name">Josh</h3>
+              <div class="team-separator"></div>
+              <h4 class="member-title">Artist</h4>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div class="member-div" data-ix="load-pop-up-600">
+                {% image self.kimmy_avatar width-130 class="member-avatar"  %}
+            </div>
+            <div>
+              <h3 class="member-name">Kimmy</h3>
+              <div class="team-separator"></div>
+              <h4 class="member-title">Designer</h4>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div class="member-div" data-ix="load-pop-up-900">
+                {% image self.sean_avatar width-130 class="member-avatar"  %}
+            </div>
+            <div>
+              <h3 class="member-name">Sean</h3>
+              <div class="team-separator"></div>
+              <h4 class="member-title">Designer</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

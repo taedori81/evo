@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load static  crispy_forms_tags wagtailcore_tags wagtailimages_tags %}
+{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block content %}
+   <section class="w-section contact-section">
+    <div class="w-container contact-column-container">
+      <div class="w-row">
+        <div class="w-col w-col-5 w-col-stack w-hidden-tiny">
+            {% image self.contact_image width-400 class="contact-image" data-ix="load-pop-up-300" %}
+        </div>
+        <div class="w-col w-col-7 w-col-stack">
+          <div class="w-container form-container" data-ix="load-slide-left-1000ms">
+            <div class="w-row">
+              <div class="w-col w-col-1 w-col-small-1">
+                  {% image self.contact_icon height-40 class="contact-icon-small" %}
+              </div>
+              <div class="w-col w-col-11 w-col-small-11">
+                <h1 class="contact-header">{{ self.contact_header }}</h1>
+              </div>
+            </div>
+            <div class="contact-subheader">{{ self.contact_description }}</div>
+            <div class="separator"></div>
+              <h1>{{ self.intro | richtext }}</h1>
+
+              <form action="{% pageurl self %}" method="post">
+                  {% csrf_token %}
+                  {{ form }}
+                  <input type="submit" value="Send Message" class="submitBtn"/>
+              </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+bs3-navbar
