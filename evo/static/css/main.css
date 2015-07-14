@@ -37,4 +37,117 @@ form > label {
 .submitBtn {
     background-color: #fff;
     color: #facb00;
+    font-weight: bold;
+    -webkit-transition: background-color 0.50s ease-in-out 0s;
+    -moz-transition: background-color 0.50s ease-in-out 0s;
+    -ms-transition: background-color 0.50s ease-in-out 0s;
+    -o-transition: background-color 0.50s ease-in-out 0s;
+    transition:background-color 0.50s ease-in-out 0s;
+
+}
+
+.submitBtn:hover {
+    background-color: #facb00;
+    color: #fff;
+}
+
+.service-image {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.contact-image {
+    margin-top: 75px;
+}
+
+.contact-header{
+    margin-left: -40px;
+}
+
+#preloader {
+	background: #FFF;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+.main-section{
+    background-image: url(../images/street2-edited.jpg);
+}
+
+@media (max-width: 991px) {
+    .main-section {
+        background-image: url(../images/street2-edited.jpg);
+    }
+}
+
+@media (max-width: 479px) {
+    .main-section {
+        background-image: url(../images/street2-edited.jpg);
+    }
+}
+
+.round-div {
+    border-color: #333;
+}
+.round-div.first {
+  border-color: #333;
+  background-color: transparent;
+}
+.round-div.second {
+  border-color: #333;
+}
+.round-div.third {
+  border-color: #333;
+}
+.round-div.fourth {
+  border-color: #333;
+}
+
+@media (max-width: 991px) {
+    .round-div {
+        border-color: #333;
+    }
+    .round-div.first {
+      border-color: #333;
+      background-color: transparent;
+    }
+    .round-div.second {
+      border-color: #333;
+    }
+    .round-div.third {
+      border-color: #333;
+    }
+    .round-div.fourth {
+      border-color: #333;
+    }
+}
+
+@media (max-width: 479px) {
+    .round-div {
+        border-color: #333;
+    }
+    .round-div.first {
+      border-color: #333;
+      background-color: transparent;
+    }
+    .round-div.second {
+      border-color: #333;
+    }
+    .round-div.third {
+      border-color: #333;
+    }
+    .round-div.fourth {
+      border-color: #333;
+    }
+}
+
+.errorlist {
+    list-style-type: none;
+    display: inline;
+    color: red;
+    font-size: 12px;
 }

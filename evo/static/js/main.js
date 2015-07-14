@@ -12,8 +12,14 @@ $(document).ready(function(){
       });
       if(($(window).height()) > 750){
            $('section').height($(window).height());
-      $(window).resize(function(){
-          $('section').height($(window).height());
-      });
+          $(window).resize(function(){
+              $('section').height($(window).height());
+          });
       }
+
+
   });
+
+$(window).load(function () {
+    $('#preloader').delay(300).fadeOut('slow');
+});

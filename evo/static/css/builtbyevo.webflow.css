@@ -109,8 +109,8 @@ a {
   right: 0px;
   min-height: 750px;
   background-color: transparent;
-  background-image: -webkit-linear-gradient(#333, rgba(194, 188, 188, 0.65) 18%, rgba(255, 255, 255, 0.95) 42%, rgba(255, 255, 255, 0.89) 100%, rgba(199, 195, 195, 0.59) 100%, rgba(255, 255, 255, 0.95)), url('../images/zoom-58375644-3.jpg');
-  background-image: linear-gradient(#333, rgba(194, 188, 188, 0.65) 18%, rgba(255, 255, 255, 0.95) 42%, rgba(255, 255, 255, 0.89) 100%, rgba(199, 195, 195, 0.59) 100%, rgba(255, 255, 255, 0.95)), url('../images/zoom-58375644-3.jpg');
+  background-image: -webkit-linear-gradient(#333, rgba(194, 188, 188, 0.65) 18%, rgba(255, 255, 255, 0.95) 42%, rgba(255, 255, 255, 0.89) 100%, rgba(199, 195, 195, 0.59) 100%, rgba(255, 255, 255, 0.95)), url('../images/street.jpg');
+  background-image: linear-gradient(#333, rgba(194, 188, 188, 0.65) 18%, rgba(255, 255, 255, 0.95) 42%, rgba(255, 255, 255, 0.89) 100%, rgba(199, 195, 195, 0.59) 100%, rgba(255, 255, 255, 0.95)), url('../images/street.jpg');
   background-position: 50% 0px, 0% 0%;
   background-size: cover, cover;
   background-repeat: repeat, repeat;
@@ -563,19 +563,20 @@ a {
   border-color: rgba(255, 255, 255, 0.70);
   border-radius: 150px;
   background-color: transparent;
+  
 }
 .round-div.first {
-  border-color: #333;
+  border-color: #fff;
   background-color: transparent;
 }
 .round-div.second {
-  border-color: #333;
+  border-color: #fff;
 }
 .round-div.third {
-  border-color: #333;
+  border-color: #fff;
 }
 .round-div.fourth {
-  border-color: #333;
+  border-color: #fff;
 }
 .circle-title {
   font-family: Exo, sans-serif;
@@ -813,6 +814,7 @@ a {
   font-size: 23px;
   font-weight: 300;
   text-transform: uppercase;
+  color: #333;
 }
 .round-div-heading.second {
   left: 31px;
@@ -1045,8 +1047,8 @@ html.w-mod-js *[data-ix="scroll-pop-up-900"] {
     top: 0px;
     right: 0px;
     height: auto;
-    background-image: -webkit-linear-gradient(#333, rgba(194, 188, 188, 0.65) 18%, rgba(255, 255, 255, 0.95) 42%, rgba(255, 255, 255, 0.89) 100%, rgba(199, 195, 195, 0.59) 100%, rgba(255, 255, 255, 0.95)), url('../images/zoom-58375644-3.jpg');
-    background-image: linear-gradient(#333, rgba(194, 188, 188, 0.65) 18%, rgba(255, 255, 255, 0.95) 42%, rgba(255, 255, 255, 0.89) 100%, rgba(199, 195, 195, 0.59) 100%, rgba(255, 255, 255, 0.95)), url('../images/zoom-58375644-3.jpg');
+    background-image: -webkit-linear-gradient(#333, rgba(194, 188, 188, 0.65) 18%, rgba(255, 255, 255, 0.95) 42%, rgba(255, 255, 255, 0.89) 100%, rgba(199, 195, 195, 0.59) 100%, rgba(255, 255, 255, 0.95)), url('../images/street.jpg');
+    background-image: linear-gradient(#333, rgba(194, 188, 188, 0.65) 18%, rgba(255, 255, 255, 0.95) 42%, rgba(255, 255, 255, 0.89) 100%, rgba(199, 195, 195, 0.59) 100%, rgba(255, 255, 255, 0.95)), url('../images/street.jpg');
     background-position: 0% 0%, 0px 0px;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
@@ -1416,8 +1418,8 @@ html.w-mod-js *[data-ix="scroll-pop-up-900"] {
     position: relative;
     height: auto;
     background-color: white;
-    background-image: -webkit-linear-gradient(rgba(153, 153, 153, 0.72) 1%, rgba(255, 255, 255, 0.76) 16%, white), url('../images/zoom-57040102-3-small.jpg');
-    background-image: linear-gradient(rgba(153, 153, 153, 0.72) 1%, rgba(255, 255, 255, 0.76) 16%, white), url('../images/zoom-57040102-3-small.jpg');
+    background-image: -webkit-linear-gradient(rgba(153, 153, 153, 0.72) 1%, rgba(255, 255, 255, 0.76) 16%, white), url('../images/street.jpg');
+    background-image: linear-gradient(rgba(153, 153, 153, 0.72) 1%, rgba(255, 255, 255, 0.76) 16%, white), url('../images/street.jpg');
     background-position: 0% 0%, 100% 50%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
