@@ -151,3 +151,23 @@ form > label {
     color: red;
     font-size: 12px;
 }
+
+.thanks-image {
+    padding-top: 120px;
+    margin-left: 60px;
+}
+
+@media (max-width: 479px) {
+    .thanks-image {
+        padding-top: 80px;
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .thanks-image {
+        padding-top: 100px;
+        margin-left: 0px;
+    }
+}

@@ -136,3 +136,4 @@ target/
 
 bower_components/
 dev.py
+db.sqlite3

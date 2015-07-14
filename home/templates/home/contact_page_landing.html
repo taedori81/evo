@@ -1,8 +1,13 @@
 {% extends "base.html" %}
 
-{% load static  crispy_forms_tags wagtailcore_tags %}
+{% load static  crispy_forms_tags wagtailcore_tags wagtailimages_tags %}
 {% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
 
 {% block content %}
-   <h1>{{ self.thank_you_text | richtext }}</h1>
+    <section class="w-section contact-section">
+    <div class="w-container">
+        <img src="{% static 'images/round-town.svg' %}" alt="Thanks" class="thanks-image" data-ix="load-pop-up-600">
+
+    </div>
+  </section>
 {% endblock %}
