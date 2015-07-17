@@ -137,6 +137,7 @@ target/
 bower_components/
 dev.py
 db.sqlite3
+db.sqlite3.backup
 
 *.env
 
