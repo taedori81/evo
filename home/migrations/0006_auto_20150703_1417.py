@@ -21,22 +21,22 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='homepage',
             name='section_2_subtitle_1',
-            field=models.CharField(default='Skillful', max_length=10),
+            field=models.CharField(default='Skillful', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
             name='section_2_subtitle_2',
-            field=models.CharField(default='Professional', max_length=10),
+            field=models.CharField(default='Professional', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
             name='section_2_subtitle_3',
-            field=models.CharField(default='Artistic', max_length=10),
+            field=models.CharField(default='Artistic', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
             name='section_2_title',
-            field=models.CharField(default='Craftsmanship', max_length=20),
+            field=models.CharField(default='Craftsmanship', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
@@ -46,22 +46,22 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='homepage',
             name='section_3_subtitle_1',
-            field=models.CharField(default='Unique', max_length=10),
+            field=models.CharField(default='Unique', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
             name='section_3_subtitle_2',
-            field=models.CharField(default='Personal', max_length=10),
+            field=models.CharField(default='Personal', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
             name='section_3_subtitle_3',
-            field=models.CharField(default='Stand Out', max_length=10),
+            field=models.CharField(default='Stand Out', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
             name='section_3_title',
-            field=models.CharField(default='Creativity', max_length=20),
+            field=models.CharField(default='Creativity', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
@@ -71,21 +71,21 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='homepage',
             name='section_4_subtitle_1',
-            field=models.CharField(default='Responsible', max_length=10),
+            field=models.CharField(default='Responsible', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
             name='section_4_subtitle_2',
-            field=models.CharField(default='Reliable', max_length=10),
+            field=models.CharField(default='Reliable', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
             name='section_4_subtitle_3',
-            field=models.CharField(default='Persistent', max_length=10),
+            field=models.CharField(default='Persistent', max_length=100),
         ),
         migrations.AddField(
             model_name='homepage',
             name='section_4_title',
-            field=models.CharField(default='Accountability', max_length=20),
+            field=models.CharField(default='Accountability', max_length=100),
         ),
     ]
