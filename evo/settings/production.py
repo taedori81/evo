@@ -18,7 +18,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # }
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.byevo.com']
 
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_HOST_USER = env('EMAIL_ADDRESS')
