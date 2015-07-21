@@ -6,7 +6,7 @@ TEMPLATE_DEBUG = False
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-
+ADMINS = (('Taehwan', 'builtbyevo@gmail.com'),)
 
 
 ALLOWED_HOSTS = ['.byevo.com']
@@ -35,6 +35,11 @@ LOGGING = {
         },
     },
     'handlers': {
+        'mail_admins': {
+            'class': 'django.utils.log.AdminEmailHandler',
+            'level': 'ERROR',
+            'include_html': True,
+        },
         'proj_log_file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
