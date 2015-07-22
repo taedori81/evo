@@ -8,6 +8,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 ADMINS = (('Taehwan', 'builtbyevo@gmail.com'),)
 
+SERVER_EMAIL = 'evo@byevo.com'
 
 ALLOWED_HOSTS = ['.byevo.com']
 
